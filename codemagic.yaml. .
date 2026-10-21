@@ -1,0 +1,11 @@
+workflows:
+  android-build:
+    name: Noor Mobile Shop Android
+    max_build_duration: 120
+    instance_type: linux_x2
+    scripts:
+      - name: Check project structure
+        script: |
+          echo "Checking project files"
+          ls -la
+          find . -maxdepth 4 -type f
